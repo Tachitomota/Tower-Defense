@@ -52,4 +52,15 @@ public class InstantiatePoolObject : MonoBehaviour
         return obj;
 
     }
+
+    public void DeactivateAllObjects()
+    {
+        foreach (GameObject obj in _pool)
+        {
+            if (obj != null && obj.activeInHierarchy)
+            {
+                obj.SetActive(false);
+            }
+        }
+    }
 }
