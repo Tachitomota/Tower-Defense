@@ -1173,6 +1173,21 @@ MonoBehaviour:
   _animator: {fileID: 8421402609607907285}
   _enemyData: {fileID: 11400000, guid: 679d08a2e8453c74baf627408e5b5db3, type: 2}
   _targetTag: Tower
+  _onInitialized:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 3452402522639598367}
+        m_TargetAssemblyTypeName: Health, Assembly-CSharp
+        m_MethodName: InitializeHealth
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!4 &5264097276379671664 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 33c5ffbf16793094bb156f83fd589009, type: 3}

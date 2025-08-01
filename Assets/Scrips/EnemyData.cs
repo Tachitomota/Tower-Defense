@@ -12,6 +12,6 @@ public class EnemyData : ScriptableObject
     public string attackAnimationName = "Attack";
     public string deathAnimationName = "Death";
     public string hitAnimationName = "Hit";
-    public string WinAnimationName = "Win";
+    public string winAnimationName = "Win";
     
 }
