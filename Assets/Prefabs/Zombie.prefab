@@ -830,6 +830,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Zombie
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 33c5ffbf16793094bb156f83fd589009, type: 3}
+      propertyPath: m_TagString
+      value: Enemy
+      objectReference: {fileID: 0}
     - target: {fileID: 1189529853000058984, guid: 33c5ffbf16793094bb156f83fd589009, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
       value: 28.607962
@@ -1110,6 +1114,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 33c5ffbf16793094bb156f83fd589009, type: 3}
       insertIndex: -1
       addedObject: {fileID: 9073732110973954960}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 33c5ffbf16793094bb156f83fd589009, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -4124513611971579853}
   m_SourcePrefab: {fileID: 100100000, guid: 33c5ffbf16793094bb156f83fd589009, type: 3}
 --- !u!1 &4775509099997984458 stripped
 GameObject:
@@ -1157,7 +1164,19 @@ MonoBehaviour:
       m_Calls: []
   _onDie:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 9073732110973954960}
+        m_TargetAssemblyTypeName: Enemy, Assembly-CSharp
+        m_MethodName: Die
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &9073732110973954960
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1188,6 +1207,27 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!65 &-4124513611971579853
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4775509099997984458}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 1
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 1.39, y: 2.8, z: 1}
+  m_Center: {x: 0, y: 1.18, z: 0}
 --- !u!4 &5264097276379671664 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 33c5ffbf16793094bb156f83fd589009, type: 3}
